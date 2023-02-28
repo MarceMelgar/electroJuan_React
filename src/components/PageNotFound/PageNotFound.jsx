@@ -1,5 +1,4 @@
 import NotFound from "../../assets/404.jpeg"
-
 import { Link } from "react-router-dom"
 export const PageNotFound = () => {
     return (

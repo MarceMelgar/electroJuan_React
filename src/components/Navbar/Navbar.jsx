@@ -4,7 +4,6 @@ import Sections from "./Sections/Sections";
 import Categories from "./Categories/Categories";
 import { Link } from "react-router-dom";
 import { useCarritoContext } from "../../context/CarritoContext";
-
 const Navbar = () => {
     const {getItemQuantity} = useCarritoContext()
 

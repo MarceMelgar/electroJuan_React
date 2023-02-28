@@ -8,7 +8,6 @@ import { useState } from "react"
 import Swal from "sweetalert2"
 import confetti from "canvas-confetti"
 import { ItemList } from "../ItemList/ItemList"
-
 export const Checkout = () => {
     const { carrito, totalPrice, emptyCart } = useCarritoContext()
     const datosFormulario = React.useRef()

@@ -1,12 +1,9 @@
 import { useState } from 'react'
 import { toast } from 'react-toastify'
 export const ItemCountCartEnCart = ({valInicial, stock, onAdd}) => {
-
     const [contador, setContador] = useState(valInicial)
-
     const sumar = () => (contador < stock) && (setContador (contador + 1))
     const restar = () => (contador > 1) && (setContador (contador - 1))
-
     const agregarAlCarrito = () => {
         onAdd(contador)
         toast('Cantidad actualizada', {
@@ -19,8 +16,7 @@ export const ItemCountCartEnCart = ({valInicial, stock, onAdd}) => {
             progress: undefined,
             theme: "dark",
             });
-    }
-    
+    }   
     return (
         <div className="itemCountEnCart">
             <h6>Cantidad:</h6>

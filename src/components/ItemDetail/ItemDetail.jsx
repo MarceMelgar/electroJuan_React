@@ -2,12 +2,10 @@ import {ItemCount} from '../ItemCount/ItemCount'
 import { Link } from 'react-router-dom'
 import { useCarritoContext } from '../../context/CarritoContext'
 export const ItemDetail = ({item}) => {
-    const { addItem } = useCarritoContext()
-    
+    const { addItem } = useCarritoContext()    
     const onAdd = (cantidad) => { 
         addItem(item, cantidad)
-    }
-    
+    }    
     return (
         <>
             <div className='gridItemDetail alturaMinCat'>

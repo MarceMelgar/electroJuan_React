@@ -8,7 +8,6 @@ export const ItemList = ({products, plantilla}) => {
                 plantilla === 'item' ? products.map(producto => <Item item={producto} key={producto.id}/>)
                     : plantilla === 'ItemCart' ? products.map(producto => <ItemCart item={producto} key={producto.id}/>)
                         : plantilla === 'ItemCheckout' && products.map(producto => <ItemCheckout item={producto} key={producto.id}/>)
-                        
             } 
         </>
     )

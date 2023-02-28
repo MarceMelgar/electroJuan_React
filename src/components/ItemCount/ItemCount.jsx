@@ -1,9 +1,7 @@
 import { useState } from 'react'
 import { toast } from 'react-toastify'
 export const ItemCount = ({valInicial, stock, onAdd, precioUni}) => {
-
     const [contador, setContador] = useState(valInicial)
-
     const sumar = () => (contador < stock) && (setContador (contador + 1))
     const restar = () => (contador > valInicial) && (setContador (contador - 1))
 
@@ -22,7 +20,6 @@ export const ItemCount = ({valInicial, stock, onAdd, precioUni}) => {
     }
     
     return (
-
         <div>
             <div className='agregarCount mb-3'>
                 <div className='d-flex justify-content-center align-items-center gap-2'>
