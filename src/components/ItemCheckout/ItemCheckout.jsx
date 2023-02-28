@@ -1,8 +1,8 @@
 export const ItemCheckout = ({item}) => {    
     return(
-        <div className="gridProductoEnCheckout">
+        <div className="gridProductoEnCheckout mb-2">
             <div>
-                <img className="checkoutImg" src={item.imagen} alt={`Imagen de producto ${item.nombre}`}/>
+                <img className="checkoutImg " src={item.imagen} alt={`Imagen de producto ${item.nombre}`}/>
             </div>
             <div>
                 <h5>{item.nombre}</h5>

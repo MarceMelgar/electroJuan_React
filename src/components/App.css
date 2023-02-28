@@ -362,6 +362,7 @@ h5, h6 {
 .gridCheckout {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    align-items: center;
 }
 
 .muestraCarritoCheckout {
