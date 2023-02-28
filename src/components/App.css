@@ -1,0 +1,507 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+}
+
+p {
+    margin: 0;
+}
+
+/* NAVBAR */
+
+.navbar {
+    background: #F8F8F8;
+    max-height: 15vh
+}
+
+
+.nav-item {
+    display: flex;
+    justify-content: center;
+    gap: .5rem
+}
+
+.nav-link {
+    transition: color .15s ease-in-out,
+    background-color .15s ease-in-out,
+    border-color .15s ease-in-out;
+}
+
+.nav-link:hover {
+    background-color: #ffffff;
+}
+
+li a.active {
+    font-weight: bold;
+}
+
+.iconoWA {
+    display: flex;
+    justify-content: end;
+    width: 70%;
+    align-items: end;
+}
+
+@media screen and (max-width: 768px) {
+    .iconoWA {
+        position: fixed;
+        z-index: 144;
+        bottom: 2rem;
+        left: 2rem;
+        background: white;
+        box-shadow: 0px 0px 5px #b1b1b1;
+        border-radius: .7rem;
+        width: 15%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .iconoWA {
+        width: 20%;
+    }
+
+}
+
+/* 
+----- ICONO CARRITO ------------- */
+
+.carrito {
+    position: fixed;
+    z-index: 144;
+    bottom: 2rem;
+    right: 2rem;
+    background: white;
+    border-radius: .7rem;
+    font-size: 2.2rem;
+    padding: 2.5rem 2.5rem;
+    box-shadow: 0px 0px 5px #b1b1b1;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.carrito i {
+    color: #161616;
+    display: flex;
+    justify-content: center;
+}
+
+.numerito {
+    position: absolute;
+    top: 1.3rem;
+    right: 1.3rem;
+    background: #f34240;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    color: white;
+    margin: 0;
+    line-height: 1;
+    overflow:hidden 
+}
+
+/*
+------- HEROSECTION -----*/
+
+/* CARUSEL */
+
+.slider-block {
+    display: flex;
+    box-sizing: border-box;
+    max-width: 100%;
+    min-width: 0px;
+    min-height: 0px;
+    flex-direction: column;
+    max-height: 80%;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.slider {
+    overflow-x: hidden;
+}
+
+.slider img {
+    width: 100%
+}
+
+/* .carousel-inner {
+    height: auto
+} */
+
+/* H1 */
+
+.h1-home {
+    min-height: 5vh;
+    font-size: 2rem;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+/* 
+----- PRODUCTOS ------------- */
+
+/* CONTENEDOR DE PROCTOS TODOS Y CATEGORIAS */
+
+.contenedorProductos {
+    margin:7px;
+    align-items: center;
+    justify-content: center;
+}
+
+.alturaMinCat {
+    min-height: 65vh;
+}
+
+/* TARJETA PRODUCTOS */
+
+.cardProducto {
+    width: 18rem;
+    margin: 6px;
+    background-color: #F8F8F8;
+}
+
+.card-img-top {
+    margin-top: 7px;
+}
+
+.cardBody {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 3px;
+    text-align: center;
+}
+
+.card-gap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem
+}
+
+.cardBtn {
+    background:  black;
+    color:white;
+    border: none;
+}
+
+.cardBtn:hover {
+    background: #FFC30E ;
+    color: black;
+}
+
+/* BOTONES */
+
+.btn-dark {
+    background-color: #000;
+}
+
+.btnAgregarAlCarrito {
+    margin-top: 2rem;
+}
+
+/* 
+----- FICHA DE PRODUCTO ------------- */
+
+
+.alineadoVertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem
+}
+
+.gridItemDetail {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1.5fr;
+}
+
+.itemCount {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.ficha_acciones_outs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.infoItemDetail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.sombra_agregar_cart_carrito {
+    display: flex;
+    gap: .8rem;
+    flex-direction: column;
+    align-items: center;
+    margin-block: 2rem;
+    padding: 3rem 2rem 3rem ;
+    box-shadow: rgb(0 0 0 / 30%) 1px 4px 4px;
+    border-radius: 12px;
+}
+
+@media screen and (max-width: 768px) {
+    .gridItemDetail {
+        display: flex;
+        flex-direction: column;
+    }
+    .ficha_acciones_outs {
+        gap: 1rem
+    }
+}
+
+/* 
+----- ITEM COUNT ------------- */
+
+.agregarCount {
+    display: flex;
+    gap: 1rem
+}
+
+
+/* 
+----- EN EL CARRITO ------------- */
+
+.itemCountEnCart {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.cardCart {
+    max-width: 520px;
+}
+
+.cardCompleta {
+    border: 1px solid rgba(0, 0, 0, 0.175);
+    display: flex;    
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img-fluid {
+    max-width: 20rem;
+}
+
+.productoEnCarrito {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 3.5fr 2fr 1.5fr;
+    gap: 2rem;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.175);
+    border-radius: .5rem;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .productoEnCarrito {
+        grid-template-columns: 1fr;
+        margin-inline: .8rem;
+    }
+}
+
+.carritoImagen {
+    width: 100%;
+}
+
+.carritoImagen img {
+    max-width: 95%;
+    max-height: 95%;
+}
+
+.carritoSubtotal, .carritoPrecio, .carritoTitulo {
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.resumenCompraCarrito {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    border-radius: .5rem;
+    justify-content: center;
+    background-color: #F8F9FA;
+}
+
+h5, h6 {
+    margin: 0;
+}
+
+.seguirFinalizar {
+    margin: 2rem;
+    margin-right: 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem
+}
+
+/* 
+----- CHECKOUT ------------- */
+
+.gridCheckout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.muestraCarritoCheckout {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkoutImg {
+    width: 70%;
+}
+
+.estiloCarritoEnCheckout {
+    padding: .5rem;
+    border-radius: .8rem;
+} 
+
+.aPagar {
+    display: flex;
+    justify-content: baseline;
+}
+
+.flexDatosCheckout {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2rem
+}
+
+.flexCarritoEnCheckout {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    gap: 2em
+}
+
+.gridProductoEnCheckout {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+.errorEmails{
+    display:none;
+    margin-top: 1rem;
+    font-size: 12px;
+    font-style: italic;
+    color:red;
+}
+
+@media screen and (max-width: 768px) {
+    .gridCheckout {
+        gap: 2rem;
+        grid-template-columns: 1fr;
+    }
+}
+
+/*
+------ FORMULARIO ------- */
+
+.form-control:focus {
+    border-color: #FFC30E;
+    box-shadow:  0 0 .5rem rgba(255,195,14.70);
+}
+
+.form-check-input:checked {
+    background-color: #FFC30E;
+    border-color: #a08500;
+    box-shadow:  0 0 .7rem rgba(255,195,14.70);
+}
+
+.form-select:focus {
+    border-color: #FFC30E;
+    box-shadow:  0 0 .7rem rgba(255,195,14.70);
+}
+
+/* 
+----- FOOTER ------------- */
+
+footer {
+    background-color: #F8F8F8;
+    max-height: 20vh;
+}
+
+.containerFooter {
+    padding: 2rem 0;
+
+} 
+.footerTexto {
+display: flex;
+align-items: center;
+text-align: center;
+justify-content: center;
+font-size: 1.2rem;
+color: #3a3a3a;
+}
+
+.redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    gap: 1rem;
+}
+
+.gh-color {
+    color:#474747
+}
+
+.gh-color:hover {
+    color:#2e2e2e
+}  
+
+.vacio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+/* 
+------ PAGINA 404 --- */
+
+.flex404 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+}
+
+.img404 {
+    max-width: 15%;
+    margin-bottom: 2rem;
+}
+
+.p404 {
+    text-align: center;
+    margin-inline: 30rem;
+}
+
