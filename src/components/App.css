@@ -64,6 +64,12 @@ li a.active {
     .iconoWA {
         width: 20%;
     }
+    .navbar {
+        max-height: 20vh;
+    }
+    h5 {
+        font-size: 1rem;
+    }
 
 }
 
